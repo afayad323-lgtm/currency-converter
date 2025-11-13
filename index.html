@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>محول العملات</title>
+</head>
+<body>
+    <div class="container">
+        <div class="right">
+            <h2>محول العملات</h2>
+            <p>حول العملات بكل سهولة ويسر</p>
+            <div class="from">
+                 <label for="from">العملة المراد تحويلها</label>
+                <select  id="from">
+                    <option value="egp">EGP</option>
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                </select>
+            </div>
+            <div class="to">
+                <label for="to">العملة المراد التحويل اليها</label>
+                <select id="to" >
+                    <option value="usd">USD</option>
+                    <option value="egp">EGP</option>
+                    <option value="eur">EUR</option>
+                </select>
+            </div>
+            <form action="">
+                <input type="number" min="0" id="amount" placeholder="اكتب المبلغ المراد تحويله ">
+                <button id="convert-btn" type="button">حول</button>
+            </form>
+              
+        </div>
+        <div class="left">
+            <h2>المبلغ المحول:</h2>
+            <div class="result"></div>
+            <p>ملاحظة: يعتمد المبلغ المُحول على سعر الصرف بداية من إغلاق العمل في اليوم السابق ويكون لأغراض المقارنة فقط. تخضع جميع الرسوم لسعر الصرف بالفندق عند تسجيل المغادرة.
+
+</p>
+        </div>
+    </div>
+    
+ <script src="main.js"></script>
+</body>
+</html>

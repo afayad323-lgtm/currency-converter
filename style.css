@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: beige;
+    direction: rtl;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+
+.right {
+    width: 50%;
+}
+
+.right h2 {
+    font-size: 50px;
+    margin-bottom: 5px;
+    color: brown;
+}
+
+.right p {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.right .from,
+.right .to {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.right .from select#from,
+.right .to select#to{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.right .from select#from,
+.right .to select#to:hover{
+    border: 1px solid brown;
+}
+
+.right .from label,
+.right .to label{
+    text-align: start;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.right input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+
+}
+
+.right input:focus{
+    border: 1px solid brown;
+    
+}
+
+.right button {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: brown;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.left {
+    width: 30%;
+    
+    background-color: #f1f5d0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.left h2{
+    font-size: 50px;
+    color: brown;
+    margin-bottom: 30px;
+    
+}
+
+.left .result {
+    margin-top: 15px;          
+    padding: 15px;               
+    background-color: #fff5d7;   
+    border: 2px solid brown;     
+    border-radius: 10px;          
+    font-size: 24px;             
+    font-weight: bold;           
+    text-align: center;         
+    transition: all 0.3s ease;
+    display: none;
+    margin-bottom: 20px;
+
+}
+
+@media (max-width : 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .right{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .left{
+        width: 100%;
+    }
+}
