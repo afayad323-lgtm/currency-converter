@@ -37,10 +37,4 @@ Convert between EGP, USD, and EUR instantly with a clean and responsive design.
 screen : ![screen](https://github.com/user-attachments/assets/cbfbac0d-dc8e-48b5-80d4-60a3295c28c3)
 
 
-
-
-
-
-├── index.html # Main HTML file
-├── style.css # CSS styles
-└── main.js # JavaScrip
+├── style.css # CSS st
